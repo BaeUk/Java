@@ -17,6 +17,7 @@ PyCharm 프로그램에서 필요 라이브러리 modul 설치
 로컬 혹은 서버에 mySql Database 생성
 
 * blockchain
+
 |    *NAME*    | *DATA TYPE* | *LENGTH* | *PRIMARY KEY* |
 | -------------| ----------- | ---------| --------------|
 | NO           | INT         | 11       |       O       |
@@ -29,6 +30,7 @@ PyCharm 프로그램에서 필요 라이브러리 modul 설치
 | SIGNATURE    | VARCHAR     | 1000     |               |
 
 * txdata
+
 |    *NAME*    | *DATA TYPE* | *LENGTH* | *PRIMARY KEY* |
 | -------------| ----------- | ---------| --------------|
 | COMMITYN     | INT         | 11       |               |
@@ -41,6 +43,7 @@ PyCharm 프로그램에서 필요 라이브러리 modul 설치
 | TXTIME       | VARCHAR     | 1000     |               |
 
 * nodelist
+
 |    *NAME*    | *DATA TYPE* | *LENGTH* | *PRIMARY KEY* |
 | -------------| ----------- | ---------| --------------|
 | IP           | VARCHAR     | 50       |               |
@@ -49,7 +52,8 @@ PyCharm 프로그램에서 필요 라이브러리 modul 설치
 
 ## Post Man
 
-### PyCharm Running!
+PyCharm Running!
+
 ### getBlockData
 ### GenerateBlock
 ### getTxData
@@ -71,8 +75,8 @@ PyCharm 프로그램에서 필요 라이브러리 modul 설치
 txData는 블럭에 반영되지 않는 데이터가 조회
 Fee(수수료), time(생성시간) 순으로 내림차순으로 정렬 조회
 
+```
 Error :
 Access to XMLHttpRequest at 'URL' from origin 'http://localhost' has been blocked by CORS policy:No 'Access-Control-Allow-Origin' header is present on the requested resource.
 ```
 참고 : https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
-```
