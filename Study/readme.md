@@ -66,10 +66,10 @@ PyCharm Running!
 
 ### getBlockData
 
-GET getBlockData
+**GET**
 ```
-http://localhost:8098/block/getBlockData
-http://localhost:8098/block/getBlockData?from=1&to=5
+http://localhost:8099/block/getBlockData
+http://localhost:8099/block/getBlockData?from=1&to=5
 ```
 HEADERS
 ```
@@ -77,10 +77,51 @@ Content-Typeapplication/json
 ```
 
 ### GenerateBlock
+**GET**
+```
+http://localhost:8099/block/generateBlock
+```
+
 ### getTxData
+**GET**
+```
+http://localhost:8099/txdata/getTxdata
+http://localhost:8099/txdata/getTxdata?count=10
+```
+HEADERS
+```
+Content-Typeapplication/json
+```
+
 ### newTx
+**POST**
+```
+http://localhost:8099/block/generateBlock
+```
+BODY
+```
+[
+  {
+      "sender": "Hwang",
+      "amount": "5000",
+      "receiver": "Ji",
+      "fee": "12",
+      "message" : "blackchain!!!!!!"
+  }
+]
+```
+
 ### getNode
+**GET**
+```
+http://localhost:8099/node/getNode
+```
+
 ### addNode
+**GET**
+```
+http://localhost:8099/node/addNode?192.168.110.000:8800
+```
 
 ## **Web**
 
