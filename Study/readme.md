@@ -64,39 +64,52 @@ Postman 혹은 Webpage에서 BlockChain, txData 조회 및 채굴
 
 PyCharm Running!
 
-### getBlockData
+### * getBlockData
 
 **GET**
 ```
 http://localhost:8099/block/getBlockData
 http://localhost:8099/block/getBlockData?from=1&to=5
 ```
-HEADERS
+**HEADERS**
 ```
 Content-Typeapplication/json
 ```
+**PARAMS**
+```
+from 1
+to 5
+```
 
-### GenerateBlock
+### * GenerateBlock
 **GET**
 ```
 http://localhost:8099/block/generateBlock
 ```
 
-### getTxData
+### * getTxData
 **GET**
 ```
 http://localhost:8099/txdata/getTxdata
 http://localhost:8099/txdata/getTxdata?count=10
 ```
-HEADERS
+**HEADERS**
 ```
 Content-Typeapplication/json
 ```
+**PARAMS**
+```
+count 10
+```
 
-### newTx
+### * newTx
 **POST**
 ```
 http://localhost:8099/block/generateBlock
+```
+HEARDERS
+```
+Content-typeapplication/json;charset=utf-8
 ```
 BODY
 ```
@@ -122,8 +135,13 @@ http://localhost:8099/node/getNode
 ```
 http://localhost:8099/node/addNode?192.168.110.000:8800
 ```
+**PARAMS**
+```
+192.168.110.000
+8800
+```
 
-## **Web**
+### **Web**
 
 ### nodejs 실행 (cmd -> 폴더이동 -> supervisor app.js)
 
@@ -141,7 +159,7 @@ http://localhost:8099/node/addNode?192.168.110.000:8800
 
 ![NodeList Page](https://i.imgur.com/PaRW0I9.png)
 
-### **조회 방식**
+## **조회 방식**
 
 * 채굴된 블록 및 원하는 블록 갯수 조회
 * txData는 블럭에 반영되지 않는 데이터 조회
