@@ -8,15 +8,14 @@ Postman 혹은 Webpage에서 BlockChain, txData 조회 및 채굴
 * 웹페이지를 통한 데이터 조회
 
 ## 필수 프로그램
-
 * mySql(HeidiSQL)
 * Pycharm
 * Nodejs
 
-PyCharm 프로그램에서 필요 라이브러리 modul 설치
-로컬 혹은 서버에 mySql Database 생성
+PyCharm 프로그램에서 필요 라이브러리 modul 설치.
+로컬 혹은 서버에 mySql Database 생성.
 
-* blockchain
+### blockchain
 
 |    *NAME*    | *DATA TYPE* | *LENGTH* | *PRIMARY KEY* |
 | -------------| ----------- | ---------| --------------|
@@ -29,7 +28,7 @@ PyCharm 프로그램에서 필요 라이브러리 modul 설치
 | FEE          | DOUBLE      |          |               |
 | SIGNATURE    | VARCHAR     | 1000     |               |
 
-* txdata
+### txdata
 
 |    *NAME*    | *DATA TYPE* | *LENGTH* | *PRIMARY KEY* |
 | -------------| ----------- | ---------| --------------|
@@ -42,7 +41,7 @@ PyCharm 프로그램에서 필요 라이브러리 modul 설치
 | MESSAGE      | VARCHAR     | 1000     |               |
 | TXTIME       | VARCHAR     | 1000     |               |
 
-* nodelist
+### nodelist
 
 |    *NAME*    | *DATA TYPE* | *LENGTH* | *PRIMARY KEY* |
 | -------------| ----------- | ---------| --------------|
@@ -63,7 +62,7 @@ PyCharm Running!
 
 ## Web
 
-### nodejs 실행 (Ex : cmd -> 해당폴더이동 -> supervisor app.js)
+### nodejs 실행 (cmd -> 폴더이동 -> supervisor app.js)
 
 * Main : http://localhost/
 * BlockData : http://localhost/getBlockData
@@ -78,5 +77,6 @@ Fee(수수료), time(생성시간) 순으로 내림차순으로 정렬 조회
 ```
 Error :
 Access to XMLHttpRequest at 'URL' from origin 'http://localhost' has been blocked by CORS policy:No 'Access-Control-Allow-Origin' header is present on the requested resource.
-```
+
 참고 : https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
+```
