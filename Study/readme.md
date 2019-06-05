@@ -19,7 +19,7 @@ PyCharm 프로그램에서 필요 라이브러리 modul 설치, 로컬 혹은 �
 
 |    *NAME*    | *DATA TYPE* | *LENGTH* | *PRIMARY KEY* |
 | -------------| ----------- | ---------| --------------|
-| NO           | INT         | 11       |       O       |
+| NO           | INT         | 11       | O             |
 | PREVIOUSHASH | VARCHAR     | 1000     |               |
 | TIMESTAMP    | VARCHAR     | 1000     |               |
 | DATA         | VARCHAR     | 1000     |               |
@@ -36,7 +36,7 @@ PyCharm 프로그램에서 필요 라이브러리 modul 설치, 로컬 혹은 �
 | SENDER       | VARCHAR     | 1000     |               |
 | AMOUNT       | VARCHAR     | 1000     |               |
 | RECEIVER     | VARCHAR     | 50       |               |
-| UUID         | BLOB        |          |       O       |
+| UUID         | BLOB        |          | O             |
 | FEE          | DOUBLE      |          |               |
 | MESSAGE      | VARCHAR     | 1000     |               |
 | TXTIME       | VARCHAR     | 1000     |               |
@@ -66,8 +66,16 @@ PyCharm Running!
 
 * Main : http://localhost/
 * BlockData : http://localhost/getBlockData
+
+![BlockData Page](https://i.imgur.com/aLvjtjx.png)
+
 * TxData : http://localhost/getTxdata
+
+![TxData Page](https://i.imgur.com/sla9EQA.png)
+
 * NodeList : http://localhost/getNodelist
+
+![NodeList Page](https://i.imgur.com/PaRW0I9.png)
 
 ### 조회 방식
 * 채굴된 블록 및 원하는 블록 갯수 조회
