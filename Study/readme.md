@@ -65,6 +65,17 @@ Postman 혹은 Webpage에서 BlockChain, txData 조회 및 채굴
 PyCharm Running!
 
 ### getBlockData
+
+GET getBlockData
+```
+http://localhost:8098/block/getBlockData
+http://localhost:8098/block/getBlockData?from=1&to=5
+```
+HEADERS
+```
+Content-Typeapplication/json
+```
+
 ### GenerateBlock
 ### getTxData
 ### newTx
@@ -106,14 +117,3 @@ Access to XMLHttpRequest at 'URL' from origin 'http://localhost' has been blocke
 * 로직의 간편화 및 예외처리
 * Broadcast 구현
 * compareMerge Trouble Shooting
-
-\`
-tempBlockchain = pd.DataFrame()
-tempBlockchain.columns = ['index', 'previoushash', 'timestamp', 'data', 'currenthash', 'proof', 'fee', 'signature']
-for block in bcToValidateForBlock:
-    blockList = [block.index, block.previousHash, str(block.timestamp), block.data,
-                 block.currentHash, block.proof, block.fee, block.signature]
-    tempBlockchain.loc[len(tempBlockchain)] = blockList
-tempBlockchain.to_sql(g_bcTableName, engine, if_exists='replace', index=False)      
-\`
-
