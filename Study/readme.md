@@ -64,9 +64,7 @@ Postman 혹은 Webpage에서 BlockChain, txData 조회 및 채굴
 
 PyCharm Running!
 
-### * getBlockData
-
-**GET**
+###  **GET** getBlockData
 ```
 http://localhost:8099/block/getBlockData
 http://localhost:8099/block/getBlockData?from=1&to=5
@@ -81,14 +79,12 @@ from 1
 to 5
 ```
 
-### * GenerateBlock
-**GET**
+### **GET** GenerateBlock
 ```
 http://localhost:8099/block/generateBlock
 ```
 
-### * getTxData
-**GET**
+### **GET** getTxData
 ```
 http://localhost:8099/txdata/getTxdata
 http://localhost:8099/txdata/getTxdata?count=10
@@ -102,8 +98,7 @@ Content-Typeapplication/json
 count 10
 ```
 
-### * newTx
-**POST**
+### **POST** newTx
 ```
 http://localhost:8099/block/generateBlock
 ```
@@ -124,14 +119,12 @@ BODY
 ]
 ```
 
-### getNode
-**GET**
+### **GET** getNode
 ```
 http://localhost:8099/node/getNode
 ```
 
-### addNode
-**GET**
+### **GET** addNode
 ```
 http://localhost:8099/node/addNode?192.168.110.000:8800
 ```
