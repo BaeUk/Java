@@ -1,6 +1,6 @@
-# [BlockChain Project 가이드 라인]
+# **[BlockChain Project 가이드 라인]**
 
-## 개요
+## **개요**
 
 Postman 혹은 Webpage에서 BlockChain, txData 조회 및 채굴
 
@@ -9,13 +9,13 @@ Postman 혹은 Webpage에서 BlockChain, txData 조회 및 채굴
 
 ![blockchain project](https://i.imgur.com/CtALucG.png)
 
-## 필수 프로그램
+## **필수 프로그램**
 
 * mySql(HeidiSQL)
 * Pycharm
 * Nodejs
 
-PyCharm Module 
+**PyCharm Module**
 
 * requests
 * pandas
@@ -24,9 +24,9 @@ PyCharm Module
 * hashlib
 * create_engine
 
-## mySql Database
+## **mySql Database**
 
-### blockchain
+### **blockchain**
 
 |    *NAME*    | *DATA TYPE* | *LENGTH* | *PRIMARY KEY* |
 | -------------| ----------- | ---------| --------------|
@@ -39,7 +39,7 @@ PyCharm Module
 | FEE          | DOUBLE      |          |               |
 | SIGNATURE    | VARCHAR     | 1000     |               |
 
-### txdata
+### **txdata**
 
 |    *NAME*    | *DATA TYPE* | *LENGTH* | *PRIMARY KEY* |
 | -------------| ----------- | ---------| --------------|
@@ -52,7 +52,7 @@ PyCharm Module
 | MESSAGE      | VARCHAR     | 1000     |               |
 | TXTIME       | VARCHAR     | 1000     |               |
 
-### nodelist
+### **nodelist**
 
 |    *NAME*    | *DATA TYPE* | *LENGTH* | *PRIMARY KEY* |
 | -------------| ----------- | ---------| --------------|
@@ -60,7 +60,7 @@ PyCharm Module
 | PORT         | VARCHAR     | 50       |               |
 | TRIAL        | INT         | 11       |               |
 
-## Post Man
+## **Post Man**
 
 PyCharm Running!
 
@@ -71,7 +71,7 @@ PyCharm Running!
 ### getNode
 ### addNode
 
-## Web
+## **Web**
 
 ### nodejs 실행 (cmd -> 폴더이동 -> supervisor app.js)
 
@@ -89,10 +89,10 @@ PyCharm Running!
 
 ![NodeList Page](https://i.imgur.com/PaRW0I9.png)
 
-### 조회 방식
+### **조회 방식**
 
 * 채굴된 블록 및 원하는 블록 갯수 조회
-* txData는 블럭에 반영되지 않는 데이터가 조회
+* txData는 블럭에 반영되지 않는 데이터 조회
 * Fee(수수료), time(생성시간) 순으로 내림차순으로 정렬 조회
 
 ```
@@ -101,7 +101,7 @@ Access to XMLHttpRequest at 'URL' from origin 'http://localhost' has been blocke
 ```
 참고 : https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
 
-## 보완점
+## **보완점**
 
 * 로직의 간편화 및 예외처리
 * Broadcast 구현
