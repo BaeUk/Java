@@ -69,11 +69,11 @@ PyCharm Running!
 http://localhost:8099/block/getBlockData
 http://localhost:8099/block/getBlockData?from=1&to=5
 ```
-HEADERS
+###### HEADERS
 ```
 Content-Typeapplication/json
 ```
-PARAMS
+###### PARAMS
 ```
 from 1
 to 5
@@ -89,11 +89,11 @@ http://localhost:8099/block/generateBlock
 http://localhost:8099/txdata/getTxdata
 http://localhost:8099/txdata/getTxdata?count=10
 ```
-HEADERS
+###### HEADERS
 ```
 Content-Typeapplication/json
 ```
-PARAMS
+###### PARAMS
 ```
 count 10
 ```
@@ -102,11 +102,11 @@ count 10
 ```
 http://localhost:8099/block/generateBlock
 ```
-HEARDERS
+###### HEARDERS
 ```
 Content-typeapplication/json;charset=utf-8
 ```
-BODY
+###### BODY
 ```
 [
   {
@@ -134,23 +134,15 @@ http://localhost:8099/node/addNode?192.168.110.000:8800
 8800
 ```
 
-### **Web**
+## **Web**
 
 ### nodejs 실행 (cmd -> 폴더이동 -> supervisor app.js)
 
 * Main : http://localhost/
-
 * BlockData : http://localhost/getBlockData
-
-![BlockData Page](https://i.imgur.com/aLvjtjx.png)
-
 * TxData : http://localhost/getTxdata
-
-![TxData Page](https://i.imgur.com/sla9EQA.png)
-
 * NodeList : http://localhost/getNodelist
 
-![NodeList Page](https://i.imgur.com/PaRW0I9.png)
 
 ## **조회 방식**
 
