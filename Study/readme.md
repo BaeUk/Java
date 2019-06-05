@@ -144,7 +144,7 @@ http://localhost:8099/node/addNode?192.168.110.000:8800
 * NodeList : http://localhost/getNodelist
 
 
-## **조회 방식**
+### **조회 방식**
 
 * 채굴된 블록 및 원하는 블록 갯수 조회
 * txData는 블럭에 반영되지 않는 데이터 조회
